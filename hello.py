@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import time
 from argparse import ArgumentParser
 from http.server import HTTPServer
 from http.server import BaseHTTPRequestHandler
@@ -40,6 +41,7 @@ parser.add_argument('--anaconda-project-address', action='store', default='0.0.0
 
 
 if __name__ == '__main__':
+    time.sleep(10)
     sys.exit(-1)
     # This app accepts all anaconda-project http options, but ignores most of them.
     args = parser.parse_args(sys.argv[1:])
