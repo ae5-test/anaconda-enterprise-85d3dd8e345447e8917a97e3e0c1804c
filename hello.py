@@ -40,6 +40,7 @@ parser.add_argument('--anaconda-project-address', action='store', default='0.0.0
 
 
 if __name__ == '__main__':
+    sys.exit(-1)
     # This app accepts all anaconda-project http options, but ignores most of them.
     args = parser.parse_args(sys.argv[1:])
     runserver(address=args.anaconda_project_address, port=args.anaconda_project_port)
